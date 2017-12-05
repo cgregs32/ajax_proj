@@ -1,0 +1,11 @@
+<h1>People</h1>
+<%= link_to 'Add new user', create_user_path %>
+<ul>
+  <% @user.each do |person| %>
+    <li><%= person['first_name'] %></li>
+    <li><%= person["last_name"] %></li>
+    <li><%= person['phone_number'] %></li>
+    <hr>
+  <% end %>
+
+</ul>
